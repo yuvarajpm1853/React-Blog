@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+// imported New Component
+import BlogList from "./BlogList";
 const Home = () => {
   
   const [blogs,setBlogs] = useState([
@@ -9,13 +10,9 @@ const Home = () => {
   ])
   return (
     <div className="home">
-      {/* loops over array */}
-        {blogs.map(blog => 
-          <div className="blog-preview" key={blog.id}>
-            <h2>{blog.title}</h2>
-            <p>Wriiten by {blog.author}</p>
-          </div>
-        )}
+      {/* Sending data to another Component through props */}
+     <BlogList blogs={blogs}/>
+     {/* Now , it goes as props = { blogs : {}} */}
       </div>
     );
   }
