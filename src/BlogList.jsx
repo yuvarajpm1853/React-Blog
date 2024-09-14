@@ -1,8 +1,8 @@
 const BlogList = (props) => {
-// * Now , it receives as props = { blogs : {}} *
-// retreiving data from props
+    // (props) or ({blogs,title})
     const blogs = props.blogs;
-    console.log(props);
+    const title = props.title;
+    console.log(title);
 
     return ( 
         <div className="blog-List">

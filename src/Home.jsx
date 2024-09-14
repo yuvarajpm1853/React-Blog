@@ -10,9 +10,8 @@ const Home = () => {
   ])
   return (
     <div className="home">
-      {/* Sending data to another Component through props */}
-     <BlogList blogs={blogs}/>
-     {/* Now , it goes as props = { blogs : {}} */}
+      {/* blog => dynamic var , title -> string */}
+     <BlogList blogs={blogs} title="Am string"/>
       </div>
     );
   }
