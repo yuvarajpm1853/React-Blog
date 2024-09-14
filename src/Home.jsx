@@ -1,18 +1,16 @@
-const Home = () => {
-  let name = "yuva";
+import { useState } from "react";
 
-  const changeName = ()=> name = "yuvaraj"
+const Home = () => {
+  // makes var as reactive
+  const [name,setName] = useState("yuva")
   return (
     <div className="home">
         <h2>Homepage</h2>
         <p>{name}</p>
 
         {/* changed name by clicking button */}
-        {/* doesnt reflect on web page becoz var is not reactive */}
-        <button onClick={changeName}> click top change name</button>
-        <p>{name}</p>
-        {/* if var printed , prints new value */}
-        <button onClick={()=>console.log(name)}> click to print name</button>
+        {/* now it reflect on web page becoz var is  reactive */}
+        <button onClick={()=>setName("Yuvaraj")}> click top change name</button>
 
       </div>
     );
