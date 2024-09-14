@@ -1,17 +1,21 @@
 import { useState } from "react";
 
 const Home = () => {
-  // makes var as reactive
-  const [name,setName] = useState("yuva")
+  
+  const [blogs,setBlogs] = useState([
+    { title: 'My new website', body: 'lorem ipsum...', author: 'mario', id: 1 },
+    { title: 'Welcome party!', body: 'lorem ipsum...', author: 'yoshi', id: 2 },
+    { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3 }
+  ])
   return (
     <div className="home">
-        <h2>Homepage</h2>
-        <p>{name}</p>
-
-        {/* changed name by clicking button */}
-        {/* now it reflect on web page becoz var is  reactive */}
-        <button onClick={()=>setName("Yuvaraj")}> click top change name</button>
-
+      {/* loops over array */}
+        {blogs.map(blog => 
+          <div className="blog-preview" key={blog.id}>
+            <h2>{blog.title}</h2>
+            <p>Wriiten by {blog.author}</p>
+          </div>
+        )}
       </div>
     );
   }
