@@ -8,13 +8,15 @@ const Home = () => {
     { title: 'Welcome party!', body: 'lorem ipsum...', author: 'yoshi', id: 2 },
     { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3 }
   ])
+
+  const deleteBlog = id =>{
+    let newblog = blogs.filter(blog => blog.id != id);
+    setBlogs(newblog);
+  }
   return (
     <div className="home">
-     <BlogList blogs={blogs} title="All Blogs"/>
-     
-      {/* Reusing the components */}
-     <BlogList blogs={blogs.filter(blog => blog.author === "mario")} title="Mario Blogs"/>
-      </div>
+     <BlogList blogs={blogs} title="All Blogs" deleteBlog={deleteBlog}/>
+    </div>
     );
   }
    
