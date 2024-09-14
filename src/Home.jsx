@@ -1,23 +1,19 @@
 const Home = () => {
-  
-  const runOnceDeafult = (word) => console.log(word);
-  // Simply added event Object in fn paramaneters
-  const clickSayHii = (e) => console.log("Hii",e);
-  const eventwithparam = (name,e) => console.log(name,e.target);
+  let name = "yuva";
 
+  const changeName = ()=> name = "yuvaraj"
   return (
     <div className="home">
         <h2>Homepage</h2>
-        
-        <button onClick={runOnceDeafult("default")}> default</button>
-        <button onClick={()=>runOnceDeafult("Clicked")}> Click </button>
-<br />
-        {/* Runs when user clicks */}
-        {/* No declaration event obj */}
-        <button type="button" onClick={clickSayHii}>Hii with no event obj</button>
-  
-        {/* declaration event obj */}
-        <button type="button" onClick={(e)=>eventwithparam("event Object",e)}>with event obj</button>
+        <p>{name}</p>
+
+        {/* changed name by clicking button */}
+        {/* doesnt reflect on web page becoz var is not reactive */}
+        <button onClick={changeName}> click top change name</button>
+        <p>{name}</p>
+        {/* if var printed , prints new value */}
+        <button onClick={()=>console.log(name)}> click to print name</button>
+
       </div>
     );
   }
