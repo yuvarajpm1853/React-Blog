@@ -1,6 +1,6 @@
 import { useState } from "react";
-// imported New Component
 import BlogList from "./BlogList";
+
 const Home = () => {
   
   const [blogs,setBlogs] = useState([
@@ -10,8 +10,10 @@ const Home = () => {
   ])
   return (
     <div className="home">
-      {/* blog => dynamic var , title -> string */}
-     <BlogList blogs={blogs} title="Am string"/>
+     <BlogList blogs={blogs} title="All Blogs"/>
+     
+      {/* Reusing the components */}
+     <BlogList blogs={blogs.filter(blog => blog.author === "mario")} title="Mario Blogs"/>
       </div>
     );
   }
