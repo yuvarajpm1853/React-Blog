@@ -3,13 +3,8 @@ import BlogList from "./BlogList";
 
 const Home = () => {
   
-  const [blogs,setBlogs] = useState([
-    { title: 'My new website', body: 'lorem ipsum...', author: 'mario', id: 1 },
-    { title: 'Welcome party!', body: 'lorem ipsum...', author: 'yoshi', id: 2 },
-    { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3 }
-  ])
-  const [ name, setName ]= useState("yuva");
-
+  const [blogs,setBlogs] = useState(null);
+const [isPending, setIsPending] = useState(true);
   const deleteBlog = id =>{
     let newblog = blogs.filter(blog => blog.id != id);
     setBlogs(newblog);
@@ -17,18 +12,22 @@ const Home = () => {
 
   // using useEffect to fetch data 
   useEffect(()=>{
-   fetch("http://localhost:8000/blogs")
+    // using setTimeout => makes user wait and loads data smoothly
+   setTimeout(()=>{
+    fetch("http://localhost:8000/blogs")
    .then(res =>{
     return res.json(); // to json foprmat
    })
-   .then(data => setBlogs(data)) // now , setting resp data to var
-  },[]) 
+   .then(data => setBlogs(data)); // now , setting resp data to var
+   setIsPending(false);}
+  ,1000) // loads data wioth one sec delay
+},[]) 
   
   return (
     <div className="home">
-     <BlogList blogs={blogs} title="All Blogs" deleteBlog={deleteBlog}/>
-     <button onClick={()=>setName("yuvaraj")}>change name</button>
-     <p>{ name }</p>
+      {/* displays an waiting msg */}
+      {isPending && <div>Loading..</div>}
+     {blogs && <BlogList blogs={blogs} title="All Blogs" deleteBlog={deleteBlog}/>}
     </div>
     );
   }
