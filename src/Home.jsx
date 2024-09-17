@@ -4,28 +4,41 @@ import BlogList from "./BlogList";
 const Home = () => {
   
   const [blogs,setBlogs] = useState(null);
-const [isPending, setIsPending] = useState(true);
+  const [isPending, setIsPending] = useState(true);
+  const [error, setError] = useState(false)
+  
   const deleteBlog = id =>{
     let newblog = blogs.filter(blog => blog.id != id);
     setBlogs(newblog);
   }
 
-  // using useEffect to fetch data 
+  
   useEffect(()=>{
-    // using setTimeout => makes user wait and loads data smoothly
+    
    setTimeout(()=>{
     fetch("http://localhost:8000/blogs")
    .then(res =>{
-    return res.json(); // to json foprmat
+    // console.log(res);
+    if (!res.ok){ // resp obj has key ok , if false 
+      throw Error("Could not able to connect to the Server")
+    }
+    return res.json(); 
    })
-   .then(data => setBlogs(data)); // now , setting resp data to var
-   setIsPending(false);}
-  ,1000) // loads data wioth one sec delay
+   .then(data => {setBlogs(data);
+   setIsPending(false);
+  })
+  .catch(err => 
+    {
+      // console.log(err.message);
+      setError(err.message); // catches and set value for var
+      setIsPending(false);
+   })
+},1000) 
 },[]) 
   
   return (
     <div className="home">
-      {/* displays an waiting msg */}
+      {error && <div> {error}</div>}
       {isPending && <div>Loading..</div>}
      {blogs && <BlogList blogs={blogs} title="All Blogs" deleteBlog={deleteBlog}/>}
     </div>
