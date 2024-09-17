@@ -15,13 +15,14 @@ const Home = () => {
     setBlogs(newblog);
   }
 
-  // useEffect dependencies => 2nd params. 1st params=> fn
-  // useEffect(()=>{console.log("Ran when page loads 1st time ")},[]) // runs only one time 
-  
-  // runs also when specific dynamic var value changed
+  // using useEffect to fetch data 
   useEffect(()=>{
-    console.log("Var value gets chanegd");
-  console.log(name);},[name]) 
+   fetch("http://localhost:8000/blogs")
+   .then(res =>{
+    return res.json(); // to json foprmat
+   })
+   .then(data => setBlogs(data)) // now , setting resp data to var
+  },[]) 
   
   return (
     <div className="home">
