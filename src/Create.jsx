@@ -1,12 +1,13 @@
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+// no useHistory => replaced as useNavigate
+import { useNavigate } from "react-router-dom";
 
 const Create = () => {
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
     const [author, setAuthor] = useState("yuvaraj");
     const [isPending, setIsPending] = useState(false);
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -20,8 +21,8 @@ const Create = () => {
         }).then(()=> 
             {
                 setIsPending(false);
-                // history.go(-1); // makes redirect to prev page
-                history.push("/"); // redirects to home page
+                // navigate(-1)
+                navigate("/"); // redirects to home page
     })
     }
     return ( 
