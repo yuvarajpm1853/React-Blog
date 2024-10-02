@@ -1,125 +1,130 @@
 {
-    "blogs" : [
-        {
-          "id": 1,
-          "title": "The Future of AI",
-          "body": "Artificial Intelligence is rapidly evolving, impacting various industries and reshaping our daily lives.",
-          "author": "Jane Doe"
-        },
-        {
-          "id": 2,
-          "title": "Healthy Eating Habits",
-          "body": "Maintaining a balanced diet is essential for good health. Learn about the benefits of different nutrients and healthy eating tips.",
-          "author": "John Smith"
-        },
-        {
-          "id": 3,
-          "title": "Travel Tips for Europe",
-          "body": "Explore top travel destinations in Europe and get tips on how to make your trip enjoyable and memorable.",
-          "author": "Alice Johnson"
-        },
-        {
-          "id": 4,
-          "title": "Mastering JavaScript",
-          "body": "JavaScript is a versatile language essential for web development. Discover advanced techniques and best practices for mastering JavaScript.",
-          "author": "Robert Brown"
-        },
-        {
-          "id": 5,
-          "title": "Fitness Routines at Home",
-          "body": "You don't need a gym to stay fit. Learn about effective home workout routines and tips for maintaining a healthy lifestyle.",
-          "author": "Emily Davis"
-        },
-        {
-          "id": 6,
-          "title": "Understanding Quantum Computing",
-          "body": "Quantum computing represents a significant leap in technology. Explore the basics and potential applications of quantum computers.",
-          "author": "Michael Wilson"
-        },
-        {
-          "id": 7,
-          "title": "Creative Writing Techniques",
-          "body": "Enhance your storytelling skills with various creative writing techniques and tips for crafting engaging narratives.",
-          "author": "Sarah Lee"
-        },
-        {
-          "id": 8,
-          "title": "Financial Planning for Beginners",
-          "body": "Learn the fundamentals of financial planning, including budgeting, saving, and investing for a secure future.",
-          "author": "David Martinez"
-        },
-        {
-          "id": 9,
-          "title": "The Benefits of Meditation",
-          "body": "Meditation offers numerous benefits for mental and physical health. Discover techniques to incorporate meditation into your daily routine.",
-          "author": "Laura Garcia"
-        },
-        {
-          "id": 10,
-          "title": "Building a Personal Brand Online",
-          "body": "Establishing a strong personal brand online can open up new opportunities. Learn strategies for creating and promoting your personal brand.",
-          "author": "James Anderson"
-        },
-        {
-          "id": 11,
-          "title": "Gardening Tips for Beginners",
-          "body": "Starting a garden can be a rewarding hobby. Get advice on selecting plants, soil preparation, and basic gardening techniques.",
-          "author": "Linda Scott"
-        },
-        {
-          "id": 12,
-          "title": "Exploring Virtual Reality",
-          "body": "Virtual reality technology is advancing rapidly. Explore its applications in gaming, education, and other industries.",
-          "author": "Paul Thompson"
-        },
-        {
-          "id": 13,
-          "title": "Tips for Effective Time Management",
-          "body": "Improve productivity with time management strategies. Discover techniques to organize tasks and make the most of your time.",
-          "author": "Karen White"
-        },
-        {
-          "id": 14,
-          "title": "Photography Basics",
-          "body": "Capture stunning photos with these essential photography tips and techniques, from camera settings to composition.",
-          "author": "Steven Harris"
-        },
-        {
-          "id": 15,
-          "title": "The Impact of Social Media",
-          "body": "Social media has a profound impact on communication and society. Analyze its effects and how to navigate the digital landscape responsibly.",
-          "author": "Nancy Clark"
-        },
-        {
-          "id": 16,
-          "title": "DIY Home Improvement Projects",
-          "body": "Transform your living space with these do-it-yourself home improvement ideas and projects for every skill level.",
-          "author": "Mark Lewis"
-        },
-        {
-          "id": 17,
-          "title": "Exploring New Technologies",
-          "body": "Stay ahead of the curve by learning about emerging technologies and their potential impact on various industries.",
-          "author": "Olivia Young"
-        },
-        {
-          "id": 18,
-          "title": "The Importance of Sustainable Living",
-          "body": "Adopting sustainable practices can benefit both the environment and your lifestyle. Discover ways to live more sustainably.",
-          "author": "Gary Robinson"
-        },
-        {
-          "id": 19,
-          "title": "How to Start a Small Business",
-          "body": "Turning your business idea into reality requires planning and strategy. Learn the steps to start and grow a successful small business.",
-          "author": "Jessica Adams"
-        },
-        {
-          "id": 20,
-          "title": "Trends in Digital Marketing",
-          "body": "Digital marketing is constantly evolving. Stay up-to-date with the latest trends and techniques for effective online marketing.",
-          "author": "Chris Turner"
-        }
-      ]
-      
+  "blogs": [
+    {
+      "id": "1",
+      "title": "The Future of AI",
+      "body": "Artificial Intelligence is rapidly evolving, impacting various industries and reshaping our daily lives.",
+      "author": "Jane Doe"
+    },
+    {
+      "id": "2",
+      "title": "Healthy Eating Habits",
+      "body": "Maintaining a balanced diet is essential for good health. Learn about the benefits of different nutrients and healthy eating tips.",
+      "author": "John Smith"
+    },
+    {
+      "id": "3",
+      "title": "Travel Tips for Europe",
+      "body": "Explore top travel destinations in Europe and get tips on how to make your trip enjoyable and memorable.",
+      "author": "Alice Johnson"
+    },
+    {
+      "id": "4",
+      "title": "Mastering JavaScript",
+      "body": "JavaScript is a versatile language essential for web development. Discover advanced techniques and best practices for mastering JavaScript.",
+      "author": "Robert Brown"
+    },
+    {
+      "id": "5",
+      "title": "Fitness Routines at Home",
+      "body": "You don't need a gym to stay fit. Learn about effective home workout routines and tips for maintaining a healthy lifestyle.",
+      "author": "Emily Davis"
+    },
+    {
+      "id": "6",
+      "title": "Understanding Quantum Computing",
+      "body": "Quantum computing represents a significant leap in technology. Explore the basics and potential applications of quantum computers.",
+      "author": "Michael Wilson"
+    },
+    {
+      "id": "7",
+      "title": "Creative Writing Techniques",
+      "body": "Enhance your storytelling skills with various creative writing techniques and tips for crafting engaging narratives.",
+      "author": "Sarah Lee"
+    },
+    {
+      "id": "8",
+      "title": "Financial Planning for Beginners",
+      "body": "Learn the fundamentals of financial planning, including budgeting, saving, and investing for a secure future.",
+      "author": "David Martinez"
+    },
+    {
+      "id": "9",
+      "title": "The Benefits of Meditation",
+      "body": "Meditation offers numerous benefits for mental and physical health. Discover techniques to incorporate meditation into your daily routine.",
+      "author": "Laura Garcia"
+    },
+    {
+      "id": "10",
+      "title": "Building a Personal Brand Online",
+      "body": "Establishing a strong personal brand online can open up new opportunities. Learn strategies for creating and promoting your personal brand.",
+      "author": "James Anderson"
+    },
+    {
+      "id": "11",
+      "title": "Gardening Tips for Beginners",
+      "body": "Starting a garden can be a rewarding hobby. Get advice on selecting plants, soil preparation, and basic gardening techniques.",
+      "author": "Linda Scott"
+    },
+    {
+      "id": "12",
+      "title": "Exploring Virtual Reality",
+      "body": "Virtual reality technology is advancing rapidly. Explore its applications in gaming, education, and other industries.",
+      "author": "Paul Thompson"
+    },
+    {
+      "id": "13",
+      "title": "Tips for Effective Time Management",
+      "body": "Improve productivity with time management strategies. Discover techniques to organize tasks and make the most of your time.",
+      "author": "Karen White"
+    },
+    {
+      "id": "14",
+      "title": "Photography Basics",
+      "body": "Capture stunning photos with these essential photography tips and techniques, from camera settings to composition.",
+      "author": "Steven Harris"
+    },
+    {
+      "id": "15",
+      "title": "The Impact of Social Media",
+      "body": "Social media has a profound impact on communication and society. Analyze its effects and how to navigate the digital landscape responsibly.",
+      "author": "Nancy Clark"
+    },
+    {
+      "id": "16",
+      "title": "DIY Home Improvement Projects",
+      "body": "Transform your living space with these do-it-yourself home improvement ideas and projects for every skill level.",
+      "author": "Mark Lewis"
+    },
+    {
+      "id": "17",
+      "title": "Exploring New Technologies",
+      "body": "Stay ahead of the curve by learning about emerging technologies and their potential impact on various industries.",
+      "author": "Olivia Young"
+    },
+    {
+      "id": "18",
+      "title": "The Importance of Sustainable Living",
+      "body": "Adopting sustainable practices can benefit both the environment and your lifestyle. Discover ways to live more sustainably.",
+      "author": "Gary Robinson"
+    },
+    {
+      "id": "19",
+      "title": "How to Start a Small Business",
+      "body": "Turning your business idea into reality requires planning and strategy. Learn the steps to start and grow a successful small business.",
+      "author": "Jessica Adams"
+    },
+    {
+      "id": "20",
+      "title": "Trends in Digital Marketing",
+      "body": "Digital marketing is constantly evolving. Stay up-to-date with the latest trends and techniques for effective online marketing.",
+      "author": "Chris Turner"
+    },
+    {
+      "id": "b444",
+      "title": "Hii",
+      "body": "HElp",
+      "author": "yuvaraj"
+    }
+  ]
 }

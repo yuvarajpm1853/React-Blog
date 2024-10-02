@@ -4,10 +4,23 @@ const Create = () => {
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
     const [author, setAuthor] = useState("yuvaraj")
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const blog = {title,body,author};
+
+        fetch("http://localhost:8000/blogs",{
+            method : 'POST',
+            headers : {'Content-Type' : 'application/json'},
+            body : JSON.stringify(blog)
+        }).then(()=> 
+            {console.log("Blog Added");
+    })
+    }
     return ( 
         <div className='create'>
             <h2>Add Blog</h2>
-            <form action="">
+            <form onSubmit={handleSubmit}>
                 <label htmlFor="title">Blog Title :</label>
                 <input type="text" id="title" required value={title} 
                     onChange={e=>setTitle(e.target.value)}/>
